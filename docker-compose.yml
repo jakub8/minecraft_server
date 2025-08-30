@@ -9,12 +9,12 @@ services:
     environment:
       DIFFICULTY: "normal"
       TYPE: "PAPER"
-      VERSION: "1.18.1"
+      VERSION: "1.20.1"
 
       MEMORY: "4G"
       MOTD: "Welome to Brown Town."
+      RESOURCE_PACK: "https://raw.githubusercontent.com/jakub8/minecraft_server/main/resource_packs/pack.zip"
       # LEVEL: "world2"
-      # RESOURCE_PACK: "http://link.com/to/your/pack.zip"
 
       SERVER_NAME: "Brown Town"
       ENABLE_ROLLING_LOGS: "true"
