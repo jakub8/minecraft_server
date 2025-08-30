@@ -11,7 +11,7 @@ services:
       TYPE: "PAPER"
       VERSION: "1.20.1"
 
-      MEMORY: "4G"
+      MEMORY: "6G"
       MOTD: "Welome to Brown Town."
       RESOURCE_PACK: "https://raw.githubusercontent.com/jakub8/minecraft_server/main/resource_packs/pack.zip"
       # LEVEL: "world2"
