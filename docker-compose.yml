@@ -1,0 +1,30 @@
+services:
+  mc:
+    image: itzg/minecraft-server:java17
+    container_name: mc-template
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+    environment:
+      DIFFICULTY: "normal"
+      TYPE: "PAPER"
+      VERSION: "1.18.1"
+
+      MEMORY: "4G"
+      MOTD: "Welome to Brown Town."
+      # LEVEL: "world2"
+      # RESOURCE_PACK: "http://link.com/to/your/pack.zip"
+
+      SERVER_NAME: "Brown Town"
+      ENABLE_ROLLING_LOGS: "true"
+      TZ: "America/Chicago"
+      ALLOW_FLIGHT: "true"
+      USE_MEOWICE_FLAGS: "true"
+      EULA: "true"
+      ICON: /assets/server-icon.jpg
+      OVERRIDE_ICON: "true"
+    volumes:
+      - ./data:/data
+      - ${HOME}/minecraft_server/shared_assets/server-icon.jpg:/assets/server-icon.jpg:ro
+    restart: unless-stopped
